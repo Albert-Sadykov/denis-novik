@@ -1,0 +1,296 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: "Gilroy-Medium";
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.wrapper{
+	position: relative;
+	overflow-x: hidden;
+}
+
+/*.content{
+	z-index: 0
+}*/
+
+.lang a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	color: #828282;
+}
+
+.menu{
+	position: fixed;
+	left: 0; top: 0;
+	width: 30%;
+	height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	background-color: #fff;
+	transition: 1s;
+	transform: translateX(-100%);
+}
+
+.menu_active {
+	transform: translateX(0%);
+}
+
+.menu-list{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50%;
+	flex-direction: column;
+	margin-right: 50px;
+}
+
+.private-lang{
+	display: none;
+}
+
+.menu-list a{
+	padding: 10px;
+	text-decoration: none;
+	font-size: 34px;
+	color:  #828282;
+	font-family: "Gilroy-Bold";
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.menu-list a:hover{
+	color: #070707;
+	transition: 1s;
+	font-weight: 700;
+}
+
+.menu-btn{
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	position: absolute;
+	right: -45px;
+	top: 10px;
+}
+
+.menu-btn span, span::after, span::before{
+	position: absolute;
+	top: 50%; margin-top: -1px;
+	left: 50%; margin-left: -15px;
+	width: 30px;
+	height: 2px;
+	background-color: #000;
+	
+}
+
+.menu-btn span::before{
+	content: "";
+	display: block;
+	transition: 1s;
+	transform: translateY(-7px);
+}
+
+.menu-btn span::after{
+	content: "";
+	display: block;
+	transition: 1s;
+	transform: translateY(8px);
+}
+
+.menu-btn-active span{
+	height: 0;
+}
+
+.menu-btn-active span::before{
+	transform: rotate(45deg);
+}
+
+.menu-btn-active span::after{
+	transform: rotate(-45deg);
+}
+
+
+
+/*header 10 - 47 line */
+
+#header{
+	width: 100%;
+}
+
+.content-bar{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.container{
+	margin: 30px 0;
+}
+
+.nav_menu{
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav{
+	text-align: center;
+	font-weight: 400;
+}
+
+.nav a{
+	color: #828282;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.nav a:hover{
+	color: #070707;
+	transition: 1.5s;
+	font-weight: 500;
+}
+
+hr{
+	color: #828282;
+}
+
+/* title-bar 51 - 93 */
+
+#title-flexbox{
+	display: flex;
+	justify-content: space-between;
+	height: 120px;
+}
+
+.name{
+	font-size: 47px;
+	font-family: Gilroy-Bold;
+	line-height: 65px;
+	overflow: hidden;
+}
+
+.job{
+	display: flex;
+	align-items: flex-end;
+	line-height: 32px;
+}
+
+.lang{
+	transform: rotate(-90deg);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 16px;
+	font-family: Gilroy-Bold;
+	color:#828282;
+	/*line-height: 20px;*/
+	font-weight: 400;
+}
+
+.eng{
+	color: #070707;
+}
+
+#photo-bar{
+	background: url("img/denis.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	object-fit: cover;
+	height: 350px;
+	margin-bottom: 100px;
+}
+
+/* info 97 - */
+
+.info{
+	width: 100%;
+	padding-bottom: 95px;
+}
+
+.gray{
+	background-color: #F6F6F6;
+
+}
+
+.title{
+	padding-top: 85px;
+	font-weight: 400;
+	font-family: Gilroy-Bold;
+	font-size: 34px;
+	text-align: center;
+	color: #070707;
+}
+
+.text{
+	width: 60%;
+	margin:  0 auto;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 31px;
+	color: #070707;
+	font-size: 22px;
+}
+
+.programs{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+
+.programs img{
+	width: 150px;
+}
+
+.example-work{
+	margin-top: 100px;
+}
+
+.work-name{
+	margin-top: 45px;
+	font-size: 21px;
+	text-align: center;
+	line-height: 22px;
+	text-decoration-line: underline;
+	color: #070707;
+}
+
+#contact{
+	background-color: #070707;
+	color: #fff;
+	width: 100%;
+	border-width: 0;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 30px;
+	height: 40px;
+	
+}
+
+.button-contact{
+	margin: auto;
+	margin-top: 30px;
+	width: 20%;
+	min-width: 100px;
+}
+
+.links{
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+.example-work img{
+	width: 100%;
+}
+
+.programs img{
+	width: 15%;
+}
